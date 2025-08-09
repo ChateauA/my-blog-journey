@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>categories | My Blog Journey!!</title>
+<head>
+	<meta name="generator" content="Hugo 0.148.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>My Blog Journey!!</title>
     <link rel="canonical" href="http://localhost:1313/">
     
     
@@ -566,6 +567,206 @@ pre {
         <header><h1 id="My Blog Journey!!"><a href="http://localhost:1313/">My Blog Journey!!</a></h1></header>
 <main>
     
+    
+    <nav class="languages links">
+        <ul>
+        
+        <li>
+            <a href="/jp/">日本語</a>
+        </li>
+        
+        </ul>
+    </nav>
+    
+    <div id="content">
+    <aside id="sidebar">
+        <div id="avatar">
+            
+            <img class="flower" src="/icon.png">
+            
+        </div>
+        
+        <div id="bio">
+        
+            <p>meow! mochi here, your purrfect companion</p>
+<p>rawr do you like my blog?</p>
+
+        
+        </div>
+        
+        <div class="small-box">
+            
+                <ul>
+<li>age: 5</li>
+<li>pronouns: she/her</li>
+</ul>
+
+            
+            </ul>
+        </div>
+
+        
+        <div>
+            <div class="tags">
+                <p class="tags">Tags</p>
+            </div>
+
+            <ul class="tags">
+            
+            
+            
+            <li><a href="http://localhost:1313/tags/meow/">meow</a></li><li><a href="http://localhost:1313/tags/rawr/">rawr</a></li>
+            </ul>
+            
+        
+        
+        <nav class="links">
+            <ul>
+            
+            
+                <li><a href="https://itch.io">itch.io</a></li>
+            
+                <li><a href="https://www.patreon.com">patreon</a></li>
+            
+            
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <article id="top" class="clearfix">
+            
+            <section>
+            <div class="img-right">
+                <img src="/cat.png">
+            </div>
+            <div>
+            <h1>welcome to my blog~!</h1>
+            
+                <p>this is an example introduction. feel free to customize it!</p>
+            
+                <p>add more lines to make it personal.</p>
+            
+            </div>
+            </section>
+            <section>
+            <h4>things i love:</h4>
+                <ul>
+                
+                    <li>coding</li>
+                
+                    <li>cats</li>
+                
+                    <li>coffee</li>
+                
+                </ul>
+            </section>
+            
+        </article>
+    
+    
+    
+        <article id="post-0">
+            <h2><a href="/posts/friends/">friends!!</a></h2>
+            
+            tags:
+            
+            <a href="/tags/meow">meow</a>,
+            
+            <a href="/tags/rawr">rawr</a>
+            
+            <div class="post-header">
+                @mochi <span class="timestamp">29/01/2025</span>
+            </div>
+            <p><p>meow rawr meow meow, rawr!</p></p>
+            
+            <div class="photosetx2">
+                
+                <a href="/photo1.png" target="_blank"><img src="/photo1.png"></a>
+                
+                <a href="/photo2.png" target="_blank"><img src="/photo2.png"></a>
+                
+            </div>
+            
+            <div class="post-content readmore">
+                
+                
+                <div class="full-content"><p>rawr meow, meow rawr rawr meow meow, rawr meow meow rawr!
+rawr meow meow rawr, rawr meow meow meow rawr!</p></div>
+                
+            </div>
+            
+            <div class="photosetx3">
+                
+                <a href="/photo3.png" target="_blank"><img src="/photo3.png"></a>
+                
+                <a href="/photo4.png" target="_blank"><img src="/photo4.png"></a>
+                
+                <a href="/photo5.png" target="_blank"><img src="/photo5.png"></a>
+                
+            </div>
+            
+        </article>
+    
+    
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
+    <script>
+    window.addEventListener('click', e => {
+        let dropboxs = document.getElementsByClassName("dropbox-content");
+        let dropbox_btns = document.getElementsByClassName("dropbox-btn");
+
+        if (dropbox_btns.namedItem(e.target.id) != null) return;
+
+        if(dropboxs.namedItem(e.target.id) == null) {
+            for (let i = 0; i < dropboxs.length; i++) {
+                dropboxs[i].removeAttribute("visible");
+            }
+        }
+    }, true)
+
+    function toggleReadMore(id) {
+        var post = document.getElementById(id)
+        var fullContent = post.getElementsByClassName("full-content")[0];
+        var btnText = post.getElementsByClassName("read-more-btn")[0];
+        var textContent = post.getElementsByClassName("text-content")[0];
+
+        if (fullContent.style.display === "none") {
+            textContent.style.display = "none";
+            fullContent.style.display = "inline";
+            btnText.innerHTML = "read less";
+        } else {
+            textContent.style.display = "inline";
+            fullContent.style.display = "none";
+            btnText.innerHTML = "read more";
+        }
+    }
+
+    function toggleDropbox(id) {
+        let dropbox = document.getElementById(id);
+
+        dropbox.toggleAttribute("visible");
+    }
+    </script>
+    </main>
+
     
 </main>
 </body>

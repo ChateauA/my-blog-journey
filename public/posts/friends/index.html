@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>categories | My Blog Journey!!</title>
+    <title>friends!! | My Blog Journey!!</title>
     <link rel="canonical" href="http://localhost:1313/">
     
     
     <link rel="icon" href="/favicon.ico">
     
     
-    <meta name="description" content="">
+    <meta name="description" content="meow rawr meow meow, rawr!">
     
+    
+    <meta name="keywords" content="meow, rawr">
     
     
     <style>
@@ -566,6 +568,66 @@ pre {
         <header><h1 id="My Blog Journey!!"><a href="http://localhost:1313/">My Blog Journey!!</a></h1></header>
 <main>
     
+<div id="single-post">
+
+    <article>
+        <h2>friends!!</h2>
+        
+        tags:
+        
+        <a href="/tags/meow">meow</a>,
+        
+        <a href="/tags/rawr">rawr</a>
+        
+        <div class="post-header">
+        @mochi <span class="timestamp">29/01/2025</span>
+        </div>
+        <p><p>meow rawr meow meow, rawr!</p></p>
+        
+        <div>
+        
+        <a href="/photo1.png" target="_blank"><img style="max-height: 15rem; margin-right: .3rem;" src="/photo1.png"></a>
+        
+        <a href="/photo2.png" target="_blank"><img style="max-height: 15rem; margin-right: .3rem;" src="/photo2.png"></a>
+        
+        </div>
+        
+        <div class="auto-numbering" id="full-content"><p>rawr meow, meow rawr rawr meow meow, rawr meow meow rawr!
+rawr meow meow rawr, rawr meow meow meow rawr!</p></div>
+        
+        <div>
+        
+        <a href="/photo3.png" target="_blank"><img style="max-height: 15rem; margin-right: .3rem;" src="/photo3.png"></a>
+        
+        <a href="/photo4.png" target="_blank"><img style="max-height: 15rem; margin-right: .3rem;" src="/photo4.png"></a>
+        
+        <a href="/photo5.png" target="_blank"><img style="max-height: 15rem; margin-right: .3rem;" src="/photo5.png"></a>
+        
+        </div>
+        
+    </article>
+    <script>
+    window.addEventListener('click', e => {
+        let dropboxs = document.getElementsByClassName("dropbox-content");
+        let dropbox_btns = document.getElementsByClassName("dropbox-btn");
+
+        if (dropbox_btns.namedItem(e.target.id) != null) return;
+
+        if(dropboxs.namedItem(e.target.id) == null) {
+            for (let i = 0; i < dropboxs.length; i++) {
+                dropboxs[i].removeAttribute("visible");
+            }
+        }
+    }, true)
+
+    function toggleDropbox(id) {
+        let dropbox = document.getElementById(id);
+
+        dropbox.toggleAttribute("visible");
+    }
+    </script>
+</div>
+
     
 </main>
 </body>
